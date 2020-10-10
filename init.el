@@ -79,13 +79,8 @@
   (mapc #'disable-theme custom-enabled-themes)
   (load-theme theme t))
 
-;; (use-package doom-themes
-;;   :init (load-theme 'doom-vibrant t))
-;; (use-package naysayer-theme
-;;   :init (load-theme 'naysayer t))
-(use-package modus-operandi-theme
- :init (rtj/load-theme 'modus-operandi))
-
+(use-package base16-theme
+  :init (rtj/load-theme 'base16-espresso))
 
 (use-package doom-modeline
   :init (doom-modeline-mode))
